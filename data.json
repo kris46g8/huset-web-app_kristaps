@@ -1,0 +1,277 @@
+// 20191107125645
+// https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event?fbclid=IwAR2RL1OQixi0L05icXSLcXCgash6jw3cfCPZmFEPL78-PFV98PNeCCa_Cpo
+
+[
+  {
+    "id": 24,
+    "date": "2019-11-07T10:58:28",
+    "date_gmt": "2019-11-07T10:58:28",
+    "guid": {
+      "rendered": "https://janstevica.dk/KEA/2SEM/database/?post_type=event&#038;p=24"
+    },
+    "modified": "2019-11-07T10:58:28",
+    "modified_gmt": "2019-11-07T10:58:28",
+    "slug": "test",
+    "status": "publish",
+    "type": "event",
+    "link": "https://janstevica.dk/KEA/2SEM/database/event/test/",
+    "title": {
+      "rendered": "Test"
+    },
+    "content": {
+      "rendered": "<p>hi</p>\n",
+      "protected": false
+    },
+    "template": "",
+    "categories": [
+
+    ],
+    "tags": [
+
+    ],
+    "event_time": "05:12:24",
+    "event_date": "2019-11-16",
+    "long_description": "sdfsd",
+    "image": false,
+    "event_price": "12.00",
+    "_links": {
+      "self": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event/24"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/types/event"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/media?parent=24"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/categories?post=24"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/tags?post=24"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "date": "2019-11-07T09:19:00",
+    "date_gmt": "2019-11-07T09:19:00",
+    "guid": {
+      "rendered": "https://janstevica.dk/KEA/2SEM/database/?post_type=event&#038;p=18"
+    },
+    "modified": "2019-11-07T11:40:46",
+    "modified_gmt": "2019-11-07T11:40:46",
+    "slug": "evoo-community-kitchen",
+    "status": "publish",
+    "type": "event",
+    "link": "https://janstevica.dk/KEA/2SEM/database/event/evoo-community-kitchen/",
+    "title": {
+      "rendered": "Evoo Community Kitchen"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "template": "",
+    "categories": [
+      2
+    ],
+    "tags": [
+      3
+    ],
+    "event_time": "18:00:00",
+    "event_date": "2019-12-11",
+    "long_description": "At Evoo every Wednesday the door gets opened for you to come with friends and family, to share food with other guests as well.\r\n\r\nA two-course menu is being served, which normally starts with a soup and some of our wonderful naturally leavened bread, followed by a main course. A menu update will be sent weekly. The courses will be presented every evening, before serving starts.\r\n\r\nThe food gets served from the kitchen, you will find a set table when you arrive, all you have to do is to grab a tray or a bowl, which is meant to be shared with 4 people.",
+    "image": {
+      "ID": "19",
+      "post_author": "1",
+      "post_date": "2019-11-07 09:17:58",
+      "post_date_gmt": "2019-11-07 09:17:58",
+      "post_content": "",
+      "post_title": "folkekoekken-slider",
+      "post_excerpt": "",
+      "post_status": "inherit",
+      "comment_status": "open",
+      "ping_status": "closed",
+      "post_password": "",
+      "post_name": "folkekoekken-slider",
+      "to_ping": "",
+      "pinged": "",
+      "post_modified": "2019-11-07 11:40:46",
+      "post_modified_gmt": "2019-11-07 11:40:46",
+      "post_content_filtered": "",
+      "post_parent": "18",
+      "guid": "https://janstevica.dk/KEA/2SEM/database/wp-content/uploads/2019/11/folkekoekken-slider.jpg",
+      "menu_order": "0",
+      "post_type": "attachment",
+      "post_mime_type": "image/jpeg",
+      "comment_count": "0",
+      "pod_item_id": "19"
+    },
+    "event_price": "80.00",
+    "_links": {
+      "self": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event/18"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/types/event"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/media?parent=18"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/categories?post=18"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/tags?post=18"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "date": "2019-11-07T09:07:32",
+    "date_gmt": "2019-11-07T09:07:32",
+    "guid": {
+      "rendered": "https://janstevica.dk/KEA/2SEM/database/?post_type=event&#038;p=14"
+    },
+    "modified": "2019-11-07T11:40:25",
+    "modified_gmt": "2019-11-07T11:40:25",
+    "slug": "thomas-clausen-trio",
+    "status": "publish",
+    "type": "event",
+    "link": "https://janstevica.dk/KEA/2SEM/database/event/thomas-clausen-trio/",
+    "title": {
+      "rendered": "Thomas Clausen Trio"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "template": "",
+    "categories": [
+      4
+    ],
+    "tags": [
+      5
+    ],
+    "event_time": "20:30:00",
+    "event_date": "2019-11-06",
+    "long_description": "Huset-KBH is presenting Thomas Clausen Trio on Stardust stage. Thomas Clausen on piano, Jesper Lundgaard playing bass, Andreas Svendsen on drums. These are two internationally well-known names - Thomas Clausen and Jesper Lundgaard have a long resume starting from the end of 70s. Andreas is a newbie here, but not really - a busy man both here and in New York. Repertoire will consist of beautiful classics and of course Clausen's originals.",
+    "image": {
+      "ID": "15",
+      "post_author": "1",
+      "post_date": "2019-11-07 09:07:07",
+      "post_date_gmt": "2019-11-07 09:07:07",
+      "post_content": "",
+      "post_title": "4",
+      "post_excerpt": "",
+      "post_status": "inherit",
+      "comment_status": "open",
+      "ping_status": "closed",
+      "post_password": "",
+      "post_name": "4",
+      "to_ping": "",
+      "pinged": "",
+      "post_modified": "2019-11-07 11:40:25",
+      "post_modified_gmt": "2019-11-07 11:40:25",
+      "post_content_filtered": "",
+      "post_parent": "14",
+      "guid": "https://janstevica.dk/KEA/2SEM/database/wp-content/uploads/2019/11/4.jpg",
+      "menu_order": "0",
+      "post_type": "attachment",
+      "post_mime_type": "image/jpeg",
+      "comment_count": "0",
+      "pod_item_id": "15"
+    },
+    "event_price": "100.00",
+    "_links": {
+      "self": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event/14"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/types/event"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/media?parent=14"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/categories?post=14"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/tags?post=14"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
