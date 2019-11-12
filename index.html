@@ -4,28 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
- <h1>Upcoming events</h1>
+    <h1>Upcoming events</h1>
 
- <form action="search.html">
-     <input name="search" type="search">
-     <input type="submit" value="search">
- </form>
+    <form action="search.html">
+        <input name="search" type="search">
+        <input type="submit" value="search">
+    </form>
 
-  <section id="posts"></section>
-  <template class="eventTemplate">
-      <article>
-          <header>
-              <a href="sub.html?id=51"><h1>TITLE GOES HERE</h1></a>
-              <img src="" alt="" class="cover">
-          </header>
-          <p></p>
-      </article>
-  </template>
+    <section id="posts"></section>
+    <template class="eventTemplate">
+        <article>
+            <header>
+                <a href="sub.html?id=51">
+                    <h1 class="eventTitle"></h1>
+                </a>
+                <img src="" alt="" class="cover">
+            </header>
 
-   <script src="index.js"></script>
+            <h2 class="eventDate"></h2>
+            <h2 class="eventTime"></h2>
+            <h3><span class="eventPrice"></span> kr</h3>
+            <p class="shortDescription"></p>
+        </article>
+    </template>
+
+    <script src="index.js"></script>
 </body>
 </html>

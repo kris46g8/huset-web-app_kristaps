@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", getData);
 
 function getData(){
     console.log("getData")
-    fetch("https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event")
+    fetch("https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event?per_page=100")
     .then(res=>res.json())
     .then(handleData)
 }
@@ -22,8 +22,8 @@ function showEvent(event){
     const eventCopy = template.cloneNode(true);
 
     //3. textcontent & innerHTML
-    const title = eventCopy.querySelector("h1");
-    title.textContent=event.title.rendered;
+    const eventTitle = eventCopy.querySelector("h1.eventTitle");
+    eventTitle.textContent=event.title.rendered;
 
     const img = eventCopy.querySelector("img.cover");
 
@@ -31,10 +31,19 @@ function showEvent(event){
     img.setAttribute("alt", "Event " +event.title.rendered)
 
     const a = eventCopy.querySelector("a");
-    a.href="sub.html?id="+event.id
+    a.href="sub.html?id="+event.id;
 
-     const p = eventCopy.querySelector("p");
-    p.textContent = event.short_description;
+     const shortDescription = eventCopy.querySelector("p.shortDescription");
+    shortDescription.textContent = event.short_description;
+
+    const eventDate = eventCopy.querySelector("h2.eventDate");
+    eventDate.textContent = event.event_date;
+
+    const eventTime = eventCopy.querySelector("h2.eventTime");
+    eventTime.textContent = event.event_time;
+
+    const eventPrice = eventCopy.querySelector(".eventPrice");
+    eventPrice.textContent = event.event_price;
 
 
     /*const content = postCopy.querySelector("section");
