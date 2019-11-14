@@ -1,9 +1,6 @@
 window.addEventListener("DOMContentLoaded", init);
 
-
 function init() {
-    getFrontpageData();
-
     const urlParams = new URLSearchParams(window.location.search);
     const search = urlParams.get("search");
 
@@ -12,15 +9,21 @@ function init() {
 
     if (search) {
         //console.log("this is search result")
-        getSearchData();
+        console.log("search")
+        getSearchData(search);
     } else if (id) {
+        //console.log("id")
+
         getSingleEvent();
     } else if (category) {
         //category stuff
 
         getCategoryData(category)
-    } else {
-        //console.log("not searching")
+    }
+    else {
+//        console.log("elseeee")
+//
+//        //console.log("not searching")
         getFrontpageData();
     }
 
@@ -39,7 +42,7 @@ function getNavigation(){
 
 function addLink(oneItem) {
     //console.log(oneItem.name)
-    //document.querySelector("nav").innerHTML += oneItem.name
+
     if (oneItem.parent === 15 && oneItem.count > 0) {
         const link = document.createElement("a");
         link.textContent = oneItem.name;
@@ -48,6 +51,13 @@ function addLink(oneItem) {
     }
 }
 
+function getSearchData(){
+  const urlParams = new URLSearchParams(window.location.search);
+  const search = urlParams.get("search");
+  fetch("https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event?_embed&search="+search)
+    .then(res=>res.json())
+    .then(handleData)
+}
 
 function getFrontpageData() {
     //console.log("getData")
@@ -57,7 +67,7 @@ function getFrontpageData() {
 }
 
 function getCategoryData(catid) {
-    //console.log("catid")
+
     fetch("https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event?_embed&categories=" + catid) //removed 20 after embed&categories
         .then(res => res.json())
         .then(handleData)
@@ -75,30 +85,11 @@ function getSingleEvent() {
 
 function handleData(myData) {
     // 1 loop
+    //console.log(myData)
     myData.forEach(showEvent)
 }
 
-/*function showEvent(event) {
-    //console.log(event)
 
-    const imgPath = event.image.guid;
-
-    const img = eventCopy.querySelector("img.cover");
-
-    img.setAttribute("src", imgPath)
-    img.setAttribute("alt", "Event " + event.title.rendered)
-
-    document.querySelector("h1.eventTitle").textContent = event.title.rendered;
-
-    document.querySelector("h2.eventDate").textContent = event.event_date;
-
-    document.querySelector("h2.eventTime").textContent = event.event_time;
-
-    document.querySelector(".eventPrice").textContent = event.event_price;
-
-    document.querySelector("p.longDescription").textContent = event.long_description;
-
-}*/
 
 
 function showEvent(event) {
