@@ -102,7 +102,7 @@ function showEvent(event) {
     const eventCopy = template.cloneNode(true);
 
     //3. textcontent & innerHTML
-    const eventTitle = eventCopy.querySelector("h1.eventTitle");
+    const eventTitle = eventCopy.querySelector("h2.eventTitle");
     eventTitle.textContent = event.title.rendered;
 
     const img = eventCopy.querySelector("img.cover");
@@ -116,11 +116,29 @@ function showEvent(event) {
     const shortDescription = eventCopy.querySelector("p.shortDescription");
     shortDescription.textContent = event.short_description;
 
-    const eventDate = eventCopy.querySelector("h2.eventDate");
-    eventDate.textContent = event.event_date;
+//    const eventDate = eventCopy.querySelector("h2.eventDate");
+//    eventDate.textContent = event.event_date;
 
-    const eventTime = eventCopy.querySelector("h2.eventTime");
-    eventTime.textContent = event.event_time;
+    const eventDate = new Date(event.event_date + "T" + event.event_time);
+
+    const hours =eventDate.getHours() < 10 ? "0" +eventDate.getHours() : "" +eventDate.getHours();
+
+    const minutes = eventDate.getMinutes() < 10 ? "0" + eventDate.getMinutes() : "" +eventDate.getMinutes();
+
+    const time = eventCopy.querySelector(".eventTime");
+    time.textContent = `${hours}:${minutes}`;
+
+    const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+
+    const year = "" + eventDate.getFullYear();
+    const month = months[eventDate.getMonth()];
+    const day = "" + eventDate.getDate();
+    const date = eventCopy.querySelector(".eventDate");
+    date.textContent = `${day}. ${month}  ${year}`;
+
+
+//    const eventTime = eventCopy.querySelector("h2.eventTime");
+//    eventTime.textContent = event.event_time;
 
     const eventPrice = eventCopy.querySelector(".eventPrice");
     eventPrice.textContent = event.event_price;
