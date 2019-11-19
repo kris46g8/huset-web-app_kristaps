@@ -18,6 +18,10 @@
 </head>
 
 <body>
+    <header class="header-container">
+        <a href="index.html"><img class="header-logo" src="images/Huset_logo_9_W.png" alt="Huset_logo"></a>
+    </header>
+
     <h1>Upcoming events</h1>
 
     <section class="search-category-container">
@@ -26,7 +30,7 @@
             <input class="input" name="search" type="search" placeholder="Search for...">
         </form>
 
-        <nav>
+        <nav class="main-menu">
             <a href="search.html">All</a>
         </nav>
 
@@ -36,9 +40,9 @@
     <template class="eventTemplate">
         <article>
             <header>
-                <a href="sub.html?id=51">
-                    <h1 class="eventTitle"></h1>
-                </a>
+
+                <h2 class="eventTitle"></h2>
+
                 <img src="" alt="" class="cover">
             </header>
 
@@ -47,8 +51,14 @@
             <h3><span class="eventPrice"></span> kr</h3>
             <p class="index longDescription"></p>
             <p class="shortDescription"></p>
+
+            <a href="sub.html?id=" class="see-more-button-event">See more</a>
+
         </article>
     </template>
+
+    <footer class="footer-container">
+    </footer>
 
     <script src="main.js"></script>
 </body>

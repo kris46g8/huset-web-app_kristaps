@@ -242,7 +242,7 @@ h2 {
 }
 
 article {
-    height: 60vh;
+    height: vh;
     width: 85vw;
     padding: 0vw 7.5vw;
     margin-top: 20vw;

@@ -10,7 +10,7 @@ function init() {
     if (search) {
         //console.log("this is search result")
         console.log("search")
-        getSearchData(search);
+        getSearchData();
     } else if (id) {
         //console.log("id")
 
@@ -46,17 +46,9 @@ function addLink(oneItem) {
     if (oneItem.parent === 15 && oneItem.count > 0) {
         const link = document.createElement("a");
         link.textContent = oneItem.name;
-        link.setAttribute("href", "category.html?category="+oneItem.id)
-        document.querySelector("nav").appendChild(link);
+        link.setAttribute("href", "category.html?category=" +oneItem.id)
+        document.querySelector(".main-menu").appendChild(link);
     }
-}
-
-function getSearchData(){
-  const urlParams = new URLSearchParams(window.location.search);
-  const search = urlParams.get("search");
-  fetch("https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event?_embed&search="+search)
-    .then(res=>res.json())
-    .then(handleData)
 }
 
 function getFrontpageData() {
@@ -71,6 +63,14 @@ function getCategoryData(catid) {
     fetch("https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event?_embed&categories=" + catid) //removed 20 after embed&categories
         .then(res => res.json())
         .then(handleData)
+}
+
+function getSearchData(){
+  const urlParams = new URLSearchParams(window.location.search);
+  const search = urlParams.get("search");
+  fetch("https://janstevica.dk/KEA/2SEM/database/wp-json/wp/v2/event?_embed&search=" +search)
+    .then(res=>res.json())
+    .then(handleData)
 }
 
 function getSingleEvent() {
@@ -90,8 +90,6 @@ function handleData(myData) {
 }
 
 
-
-
 function showEvent(event) {
 
 
@@ -102,7 +100,7 @@ function showEvent(event) {
     const eventCopy = template.cloneNode(true);
 
     //3. textcontent & innerHTML
-    const eventTitle = eventCopy.querySelector("h2.eventTitle");
+    const eventTitle = eventCopy.querySelector("h2");
     eventTitle.textContent = event.title.rendered;
 
     const img = eventCopy.querySelector("img.cover");
@@ -110,14 +108,8 @@ function showEvent(event) {
     img.setAttribute("src", imgPath)
     img.setAttribute("alt", "Event " + event.title.rendered)
 
-    const a = eventCopy.querySelector("a");
-    a.href = "sub.html?id="+event.id;
-
     const shortDescription = eventCopy.querySelector("p.shortDescription");
     shortDescription.textContent = event.short_description;
-
-//    const eventDate = eventCopy.querySelector("h2.eventDate");
-//    eventDate.textContent = event.event_date;
 
     const eventDate = new Date(event.event_date + "T" + event.event_time);
 
@@ -145,6 +137,9 @@ function showEvent(event) {
 
     const longDescription = eventCopy.querySelector("p.longDescription");
     longDescription.textContent = event.long_description;
+
+    const a = eventCopy.querySelector("a");
+    a.href = "sub.html?id=" + event.id;
 
     /*const content = postCopy.querySelector("section");
     content.innerHTML=post.content.rendered;
