@@ -151,6 +151,8 @@ function showEvent(event) {
     document.querySelector("#posts").appendChild(eventCopy)
 }
 
+//BURGER MENU
+
 
 
 

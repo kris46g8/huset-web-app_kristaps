@@ -7,18 +7,25 @@
     <meta name="description" content="NOINDEX, NOFOLLOW">
     <title>Awesome used books</title>
     <link rel="stylesheet" href="style.css">
-
-      <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#ffffff"> -->
 </head>
 
 <body>
-    <h1>A wonderful event</h1>
+      <ul class="navigation">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="search.html">Events</a></li>
+        <li class="nav-item"><a href="#">Venues</a></li>
+        <li class="nav-item"><a href="#">Find us</a></li>
+    </ul>
+
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+
+    <header class="header-container">
+        <a href="index.html"><img class="header-logo" alt="Huset" src="images/Huset_logo_9_W.png"></a>
+    </header>
+
+<div class="site-wrap">
     <section class="search-category-container">
 
         <form action="search.html">
@@ -36,13 +43,12 @@
         <template class="eventTemplate">
             <article>
                 <header>
-                    <a href="event.html?id=">
-                        <h2 class="eventTitle">title here</h2>
-                    </a>
 
                     <img src="" alt="" class="cover">
                 </header>
-
+                <a href="event.html?id=">
+                    <h2 class="eventTitle">title here</h2>
+                </a>
                 <h2 class="eventDate"></h2>
                 <h2 class="eventTime"></h2>
                 <h3><span class="eventPrice"></span> kr</h3>
@@ -54,6 +60,7 @@
     </main>
 
     <script src="main.js"></script>
+    </div>
 </body>
 
 </html>
