@@ -203,7 +203,7 @@ body {
 }
 
 nav {
-    margin: 0 7.5vw;
+    margin: 0 7.5tvw;
 }
 
 nav a {
@@ -438,17 +438,48 @@ label[for="nav-trigger"] {
 /*------TICKETS PAGE---------*/
 
 .ticket-img {
-    margin-left: 0;
-    width: 10vw;;
+/*
+    margin-left: 30vw ;
+    margin-top: 400px;
+*/
+
+}
+.ticket-container h2{
+    margin-top: 14vh;
+    height: 5vh;
+    background-color: var(--green);
+    text-align: center;
+    padding-top: 1vh;
+
+    font-family: "Avenir";
+    color: var(--black);
+    font-size: 5vw;
+/*
+    margin-bottom: 5vw;
+    padding: 0 7.5vw;
+*/
+
 }
 
-.ticket-container {
+a img{
+    padding-top: 5vh;
+    padding-left: 5.5vh;
+}
+
+#tickets-title {
     height: 100vh;
+    margin-top: vh;
     width: 100vw;
-    padding: 10vw;
-    z-index: 0;
-    box-sizing: border-box;
-    background-color: blue;
+    background-color: var(--white);
+}
+
+#showing-ticket {
+    height: 100vh;
+}
+
+.ticket {
+    height: auto;
+    width: 100%;
 }
 
 
@@ -549,16 +580,6 @@ label[for="nav-trigger"] {
     text-transform: uppercase;
     font-size: 1.5em;
 }
-
-/*
-#ticket-count-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 16.2vh;
-    margin-bottom: 16.2vh;
-    background-color: aqua;
-}
-*/
 
 /* The Modal (background) */
 .modal {
