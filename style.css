@@ -221,6 +221,9 @@ nav a {
     padding: 2vw 1.2vw;
 }
 
+.main-menu {
+    margin-left: 7.5vw;
+}
 
 a {
     text-decoration: none;
