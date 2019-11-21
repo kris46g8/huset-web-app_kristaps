@@ -10,11 +10,11 @@
 </head>
 
 <body>
-      <ul class="navigation">
+    <ul class="navigation">
         <li class="nav-item"><a href="index.html">Home</a></li>
         <li class="nav-item"><a href="about.html">About</a></li>
         <li class="nav-item"><a href="search.html">Events</a></li>
-        <li class="nav-item"><a href="#">Venues</a></li>
+        <li class="nav-item"><a href="tickets.html">Tickets</a></li>
         <li class="nav-item"><a href="#">Find us</a></li>
     </ul>
 
@@ -25,42 +25,79 @@
         <a href="index.html"><img class="header-logo" alt="Huset" src="images/Huset_logo_9_W.png"></a>
     </header>
 
-<div class="site-wrap">
-    <section class="search-category-container">
+    <div class="site-wrap">
+        <section class="search-category-container">
 
-        <form action="search.html">
-            <input class="input" name="search" type="search" placeholder="Search for...">
-        </form>
+            <form action="search.html">
+                <input class="input" name="search" type="search" placeholder="Search for...">
+            </form>
 
-        <nav class="main-menu">
-            <a href="search.html">All</a>
-        </nav>
+            <nav class="main-menu">
+                <a href="search.html">All</a>
+            </nav>
 
-    </section>
-    <main>
+        </section>
+        <main>
 
-        <section id="posts"></section>
-        <template class="eventTemplate">
-            <article>
-                <header>
+            <section id="posts"></section>
+            <template class="eventTemplate">
+                <article>
+                    <header>
 
-                    <img src="" alt="" class="cover">
-                </header>
-                <a href="event.html?id=">
-                    <h2 class="eventTitle">title here</h2>
-                </a>
-                <h2 class="eventDate"></h2>
-                <h2 class="eventTime"></h2>
-                <h3><span class="eventPrice"></span> kr</h3>
-                <p class="longDescription"></p>
-                <p class="sub shortDescription"></p>
-            </article>
-        </template>
+                        <img src="" alt="" class="cover">
+                    </header>
+                    <a href="event.html?id=">
+                        <h2 class="eventTitle">title here</h2>
+                    </a>
+                    <h2 class="eventDate"></h2>
+                    <h2 class="eventTime"></h2>
+                    <h3><span class="eventPrice"></span> kr</h3>
+                    <p class="longDescription"></p>
+                    <p class="sub shortDescription"></p>
+                </article>
+            </template>
 
-    </main>
+        </main>
+
+    </div>
+
+    <!-- MODAL MARKUP -->
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Tickets</h2>
+            </div>
+            <div class="modal-body">
+
+                <h2 class="eventTitle">Dahl, Toldam, Bruun</h2>
+                <h2 class="eventDate">19. nov 2019</h2>
+                <h2 class="eventTime">19:30</h2>
+                <h3 class="eventPrice"><strong>Total</strong><span>100 kr</span></h3>
+
+            </div>
+            <div class="modal-footer-wrapper">
+                <p id="minus">-</p>
+                <p id="ticket-count">1</p>
+                <p id="plus">+</p>
+            </div>
+
+            <a href="tickets.html" id="buyBtn-final">Buy</a>
+        </div>
+
+    </div>
+
+    <button id="buyBtn">Buy tickets</button>
+
+    <footer class="footer-container">
+        <!--        <button id="buyBtn">Buy tickets</button>-->
+    </footer>
 
     <script src="main.js"></script>
-    </div>
+
 </body>
 
 </html>
